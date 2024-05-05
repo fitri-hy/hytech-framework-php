@@ -1,5 +1,5 @@
 # Hytech Framework PHP (Basic Started)
-
+PHP framework with MVC (Model View Controller) model.
 ```
 ROOT
 ├── app
@@ -47,5 +47,14 @@ ROOT
 │
 └── .htaccess                       # pengalihan URL
 ```
+
+## Installation
+```
+git clone https://github.com/fitri-hy/hytech-framework-php.git
+```
+- Pindahkan proyek hytech-framework-php ke htdocs (xampp)
+- Start apache
+- Jalan di browser `http://localhost/hytech-framework-php/`
+
 
 Support me by giving stars.
