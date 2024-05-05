@@ -56,5 +56,6 @@ git clone https://github.com/fitri-hy/hytech-framework-php.git
 - Start apache
 - Jalan di browser `http://localhost/hytech-framework-php/`
 
-Masih statis belum ada koneksi ke database kok. :)
+Proyek ini masih versi web statis belum ada koneksi ke database :). Jadi kamu bisa membuat sendiri koneksinya dan menyesuaikan dengan kebutuhan.
+
 Support me by giving stars.
