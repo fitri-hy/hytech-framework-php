@@ -1,0 +1,4 @@
+<?php
+$content = 'pages/home.hytech';
+include_once('layout.hytech');
+?>
