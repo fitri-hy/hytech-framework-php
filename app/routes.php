@@ -1,28 +1,50 @@
 <?php
-require_once('controllers/Controller.php');
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/config/config.php';
+
+use App\Controllers\Controller;
+use App\Models\Model;
+use App\Helper\Helper;
+use App\Config\Config;
+use App\Config\Database;
+
+$config = Config::getDatabaseConfig();
+$useDatabase = $config['use_database'];
+
+if ($useDatabase) {
+    $db = new Database($config);
+    $db->connect();
+}
 
 $routes = array(
-    '/' => 'Controller@index', // pages/home.hytech
-    // Anda dapat menambahkan rute lain disini.
+    '/' => 'Controller@index',
+    // Add other routes here.
 );
 
-// Fungsi untuk mendapatkan URL saat ini
 function getCurrentUrl() {
     return isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '/';
 }
 
-// Fungsi untuk mencocokkan rute
 function matchRoute($routes, $url) {
     if (isset($routes[$url])) {
         return $routes[$url];
     }
-    return 'NotFound@index'; // pages/404.hytech
+    return 'NotFound@index';
 }
 
-// Mendapatkan URL saat ini
-$currentUrl = getCurrentUrl();
+function handleRoute($routes, $helper, $model) {
+    $currentUrl = getCurrentUrl();
+    list($controllerName, $methodName) = explode('@', matchRoute($routes, $currentUrl));
+    $controllerName = 'App\Controllers\\' . $controllerName;
 
-// Mencocokkan rute dan memanggil controller serta method yang sesuai
-list($controllerName, $methodName) = explode('@', matchRoute($routes, $currentUrl));
-$controller = new $controllerName();
-$controller->$methodName();
+    if (!class_exists($controllerName)) {
+        $controllerName = 'App\Controllers\NotFound';
+        $methodName = 'index';
+    }
+
+    $controller = new $controllerName($helper, $model);
+    $controller->$methodName();
+}
+
+handleRoute($routes, new Helper(), new Model());
+?>

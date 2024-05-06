@@ -1,61 +1,58 @@
 # Hytech Framework PHP (Basic Started)
 PHP framework with MVC (Model View Controller) model.
+
+
 ```
 ROOT
 ├── app
 │   ├── config
-│   │   └── config.php              # konfigurasi database
-│   │
+│   │   ├── config.php
+│   │   └── database.php
 │   ├── controllers
-│   │   └── Controller.php          # logika permintaan
-│   │
+│   │   ├── Controller.php
+│   │   └── NotFound.php
 │   ├── helper
-│   │   └── Helper.php              # fungsi-fungsi
-│   │
+│   │   └── Helper.php
 │   ├── models
-│   │   └── Model.php               # logika berinteraksi
-│   │
+│   │   ├── Database.php
+│   │   └── Model.php
 │   ├── views
 │   │   ├── pages
-│   │   │   ├── 404.hytech          # halaman kesalahan 404
-│   │   │   └── home.hytech         # halaman utama
-│   │   │
+│   │   │   ├── 404.hytech
+│   │   │   └── home.hytech
 │   │   ├── partial
-│   │   │   ├── footer.hytech       # bagian footer
-│   │   │   ├── head.hytechh        # bagian meta head
-│   │   │   ├── navbar.hytech       # bagian navigasi
-│   │   │   └── script.hytech       # bagian script javascript
-│   │   │
-│   │   ├── index.hytech            # merender layout
-│   │   └── layout.hytech           # tata letak (layouting)
-│   │
-│   ├── HyTech.php                  # basis template
-│   └── routes.php                  # rute
-│
+│   │   │   ├── footer.hytech
+│   │   │   ├── head.hytechh
+│   │   │   └── script.hytech
+│   │   ├── index.hytech
+│   │   └── layout.hytech
+│   ├── HyTech.php
+│   └── routes.php
 ├── public
 │   ├── css
-│   │   └── style.css               # file CSS
-│   │   
+│   │   └── style.css
 │   ├── images
-│   │   └── logo.png                # logo
-│   │   
+│   │   └── logo.png
 │   ├── js
-│   │   └── main.js                 # file javascript
-│   │   
-│   ├── .htaccess                   # konfigurasi server (apache)
-│   └── index.php                   #  titik masuk utama web
-│
-└── .htaccess                       # pengalihan URL
+│   │   └── main.js
+│   ├── .htaccess
+│   └── index.php
+├── vendor
+│   ├── bin
+│   ├── composer
+│   └── autoload.php
+├── .htaccess
+├── composer.json
+└── composer.lock
 ```
 
 ## Installation
 ```
 git clone https://github.com/fitri-hy/hytech-framework-php.git
 ```
-- Pindahkan proyek hytech-framework-php ke htdocs (xampp)
+- Move hytech-framework-php project to htdocs (xampp)
 - Start apache
-- Jalan di browser `http://localhost/hytech-framework-php/`
+- Run in the browser `http://localhost/hytech-framework-php/`
 
-Proyek ini masih versi web statis belum ada koneksi ke database :). Jadi kamu bisa membuat sendiri koneksinya dan menyesuaikan dengan kebutuhan.
 
 Support me by giving stars.

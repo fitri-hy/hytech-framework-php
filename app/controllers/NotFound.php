@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Helper\Helper;
 use App\Models\Model;
 
-class Controller {
+class NotFound {
     protected $helper;
     protected $model;
 
@@ -15,11 +15,11 @@ class Controller {
     }
     
     public function index() {
-        $pageTitle = 'Welcome to HyTech Framework';
-        $pageDescription = 'HyTech Framework is a PHP framework with an MVC model';
-        $pageKeywords = 'hytech, framework, website, php';
+        $pageTitle = 'Error 404: Page not found';
+        $pageDescription = 'Oops! The page you are looking for does not exist.';
+        $pageKeywords = 'error, 404, page, not found';
 
-        $content = __DIR__ . '/../views/pages/home.hytech';
+        $content = __DIR__ . '/../views/pages/404.hytech';
         include_once(__DIR__ . '/../views/layout.hytech');
     }
 }

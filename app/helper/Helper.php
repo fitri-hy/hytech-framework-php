@@ -1,6 +1,7 @@
 <?php
+namespace App\Helper;
 
-// Function to include footer file
-function includeFooter($footerFile) {
-    include_once(__DIR__ . '/../views/' . $footerFile);
+class Helper {
+    // Methods/helper functions can be defined here
 }
+?>
