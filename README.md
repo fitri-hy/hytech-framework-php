@@ -33,7 +33,7 @@ ROOT
 │   │		├── partial
 │   │		│	├── footer.hytech
 │   │		│	├── head.hytech
-│   │		│	├── script.hytech
+│   │		│	└── script.hytech
 │   │		└── layout.hytech
 │   ├── HyTech.php
 │   └── routes.php
