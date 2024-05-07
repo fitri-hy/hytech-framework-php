@@ -30,11 +30,11 @@ ROOT
 │   │		├── pages
 │   │		│	├── 404.hytech
 │   │		│	└── home.hytech
-│   │		└── partial
-│   │   		├── footer.hytech
-│   │   		├── head.hytech
-│   │   		├── script.hytech
-│   │   		└── layout.hytech
+│   │		├── partial
+│   │		│	├── footer.hytech
+│   │		│	├── head.hytech
+│   │		│	├── script.hytech
+│   │		└── layout.hytech
 │   ├── HyTech.php
 │   └── routes.php
 ├── public
