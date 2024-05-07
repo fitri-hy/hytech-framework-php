@@ -9,6 +9,7 @@ ROOT
 │   │   ├── config.php
 │   │   └── database.php
 │   ├── controllers
+│   │   ├── AdminController.php
 │   │   ├── Controller.php
 │   │   └── NotFound.php
 │   ├── helper
@@ -17,23 +18,34 @@ ROOT
 │   │   ├── Database.php
 │   │   └── Model.php
 │   ├── views
-│   │   ├── pages
-│   │   │   ├── 404.hytech
-│   │   │   └── home.hytech
-│   │   ├── partial
-│   │   │   ├── footer.hytech
-│   │   │   ├── head.hytechh
-│   │   │   └── script.hytech
-│   │   ├── index.hytech
-│   │   └── layout.hytech
+│   │   ├── backend
+│   │   │   ├── pages
+│   │   │   │	└── dashboard.hytech
+│   │   │   ├── partial
+│   │   │   │	├── footer.hytech
+│   │   │   │	├── head.hytech
+│   │   │   │	└── script.hytech
+│   │   │   └── layout.hytech
+│   │   └── frontend
+│   │		├── pages
+│   │		│	├── 404.hytech
+│   │		│	└── home.hytech
+│   │		└── partial
+│   │   		├── footer.hytech
+│   │   		├── head.hytech
+│   │   		├── script.hytech
+│   │   		└── layout.hytech
 │   ├── HyTech.php
 │   └── routes.php
 ├── public
 │   ├── css
+│   │   ├── admin_style.css
 │   │   └── style.css
 │   ├── images
+│   │   ├── avatar.png
 │   │   └── logo.png
 │   ├── js
+│   │   ├── admin_main.js
 │   │   └── main.js
 │   ├── .htaccess
 │   └── index.php

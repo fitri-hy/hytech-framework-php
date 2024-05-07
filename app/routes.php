@@ -18,6 +18,7 @@ if ($useDatabase) {
 
 $routes = array(
     '/' => 'Controller@index',
+    '/admin' => 'AdminController@index',
     // Add other routes here.
 );
 

@@ -19,7 +19,7 @@ class NotFound {
         $pageDescription = 'Oops! The page you are looking for does not exist.';
         $pageKeywords = 'error, 404, page, not found';
 
-        $content = __DIR__ . '/../views/pages/404.hytech';
-        include_once(__DIR__ . '/../views/layout.hytech');
+        $content = __DIR__ . '/../views/frontend/pages/404.hytech';
+        include_once(__DIR__ . '/../views/frontend/layout.hytech');
     }
 }

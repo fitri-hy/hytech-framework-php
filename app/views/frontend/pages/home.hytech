@@ -3,6 +3,7 @@
         <div class="col-md-10 main-title">
           <h1>Hello Codingers</h1>
           <h2>Welcom to HyTech Framework</h2>
+		  <a href="./admin">Go to Admin Dashboard</a>
         </div>
       </div>
       <div class="row align-items-center">
