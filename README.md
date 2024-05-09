@@ -67,6 +67,10 @@ git clone https://github.com/fitri-hy/hytech-framework-php.git
 - Start apache
 - Run in the browser `http://localhost/hytech-framework-php/`
 
+## Alternative
+- Go to folder `public/`
+- Open terminal in folder, command: `php -S localhost:8000`
+
 How to use Static Site (without use connection database):
 `'use_database' => true`
 Change `true` to `false`
