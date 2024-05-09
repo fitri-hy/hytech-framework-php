@@ -1,7 +1,8 @@
 # Hytech Framework PHP (Basic Started)
 PHP framework with MVC (Model View Controller) model.
 
-<img src="./logo.jpg">
+<img src="./hytech.jpg">
+
 ```
 ROOT
 ├── app
