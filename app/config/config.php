@@ -8,7 +8,7 @@ class Config {
             'dbname' => 'demo',
             'username' => 'root',
             'password' => 'root',
-            'use_database' => true // Set to 'true' for use database connection
+            'use_database' => false // Set to 'true' for use database connection
         );
     }
 }
