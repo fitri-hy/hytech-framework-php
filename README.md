@@ -36,6 +36,7 @@ ROOT
 │   │       │	├── head.hytech
 │   │       │	└── script.hytech
 │   │       └── layout.hytech
+│   ├── .env
 │   ├── HyTech.php
 │   └── routes.php
 ├── public
