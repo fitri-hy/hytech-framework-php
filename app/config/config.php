@@ -4,12 +4,15 @@ namespace App\Config;
 class Config {
     public static function getDatabaseConfig() {
         return array(
-            'host' => 'localhost',
-            'dbname' => 'demo',
-            'username' => 'root',
-            'password' => 'root',
-            'use_database' => false // Set to 'true' for use database connection
+            'host' => $_ENV['DB_HOST'],
+            'dbname' => $_ENV['DB_NAME'],
+            'username' => $_ENV['DB_USER'],
+            'password' => $_ENV['DB_PASSWORD'],
+			'use_database' => false // set to 'true' for use database connection
         );
+    }
+    public static function getBaseUrl() {
+        return $_ENV['BASE_URL'];
     }
 }
 ?>

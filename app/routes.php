@@ -8,6 +8,9 @@ use App\Helper\Helper;
 use App\Config\Config;
 use App\Config\Database;
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 $config = Config::getDatabaseConfig();
 $useDatabase = $config['use_database'];
 
